@@ -11,3 +11,16 @@ console.log (`email: ${customer.email}`);
 
 // Customer Profile Created  
 
+//Task 2 Store Order Details 
+const orders = {
+    orderID: 876,
+    totalAmount: 300,
+    status: "Delivered",
+
+displayOrder: function() {
+    console.log(`OrderID: ${this.orderID}`);
+    console.log(`totalAmount: $${this.totalAmount}`);
+    console.log(`status: ${this.status}`);
+}
+}
+orders.displayOrder();
