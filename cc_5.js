@@ -24,3 +24,29 @@ displayOrder: function() {
 }
 }
 orders.displayOrder();
+
+// Order Details completed 
+
+
+// Task 3 Whats in my cart
+
+let cartItems = ["shirt", "pants", "cap"];
+
+// Add an Item
+cartItems.push ("shorts");
+console.log(cartItems);
+
+// Remove last item 
+cartItems.pop();
+console.log(cartItems);
+
+// Add Item to the beginning 
+cartItems.unshift("watch");
+console.log(cartItems);
+
+// Remove first item
+cartItems.shift();
+console.log(cartItems);
+
+// Completed items in Shopping cart
+console.log("Completed Shopping Cart items", cartItems); 
