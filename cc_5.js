@@ -64,3 +64,14 @@ let discountedPrices = applyDiscount(0.1, prices);
 console.log(discountedPrices);
 
 // You got a discount 
+
+// Task 5 Product Availability 
+
+const inventory = [45, 0, 22, 56, 0];
+
+// Checking Availability 
+const inStock = (quantity) => quantity > 0;
+
+const productsAvailable = inventory.filter(inStock);
+
+console.log(productsAvailable);
