@@ -75,3 +75,19 @@ const inStock = (quantity) => quantity > 0;
 const productsAvailable = inventory.filter(inStock);
 
 console.log(productsAvailable);
+
+
+// Task 6 Company Revenue 
+
+const sales = [900, 450, 790, 525];
+
+// Total sales Calculation 
+
+function sumSales(accumulator, currentValue){
+    return accumulator + currentValue;
+}
+// Total revenue calculation 
+
+const totalRevenue = sales.reduce(sumSales, 0);
+
+console.log(`Total Revenue: $${totalRevenue}`);
