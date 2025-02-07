@@ -102,3 +102,14 @@ function findCustomer(name){
 }
 console.log(findCustomer("Nick")); 
 
+// Task 8 Calculating Tax 
+
+function calculateSalesTax (price, taxRate){
+    return price * taxRate
+}
+
+let price = 900;
+let taxRate = 0.07;
+
+let taxAmount = calculateSalesTax(price, taxRate);
+console.log(`Tax Amount: $${taxAmount}`);
