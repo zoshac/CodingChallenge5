@@ -113,3 +113,14 @@ let taxRate = 0.07;
 
 let taxAmount = calculateSalesTax(price, taxRate);
 console.log(`Tax Amount: $${taxAmount}`);
+
+// Task 9 Heres a Discount 
+
+function applyDiscount(discount = 0.07, ...prices) {
+    return prices.map(price => price * (1 - discount));
+}
+
+let priceDiscount = applyDiscount(0.1, 675, 420, 830);
+console.log(priceDiscount);
+
+
