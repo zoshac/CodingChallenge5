@@ -50,3 +50,17 @@ console.log(cartItems);
 
 // Completed items in Shopping cart
 console.log("Completed Shopping Cart items", cartItems); 
+
+
+// Task 4 Adjusting Prices 
+
+let prices = [1000, 750, 800];
+
+function applyDiscount(discount = 0.10, pricesArray){
+    return pricesArray.map(price => price * (1 - discount));
+}
+
+let discountedPrices = applyDiscount(0.1, prices);
+console.log(discountedPrices);
+
+// You got a discount 
