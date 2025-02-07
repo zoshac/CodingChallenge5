@@ -91,3 +91,14 @@ function sumSales(accumulator, currentValue){
 const totalRevenue = sales.reduce(sumSales, 0);
 
 console.log(`Total Revenue: $${totalRevenue}`);
+
+// Task 7 Finding Customers 
+
+const customers = ["Jen", "Nick", "Jay", "Yan"]; 
+
+// Search customer
+function findCustomer(name){
+    return customers.find(customer => customer === name);
+}
+console.log(findCustomer("Nick")); 
+
